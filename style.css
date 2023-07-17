@@ -1,0 +1,22 @@
+nav ul li{display: inline;}
+.page{
+    width: 80vw;
+    height: 80vh;
+    border: 1px solid black;
+    padding-left: 1%;
+}
+#page1{background-color: rgb(252, 0, 0);}
+#page2{background-color: rgb(0, 255, 0);}
+#page3{background-color: rgb(0, 0, 255);} 
+
+/* for responsive menu */
+#hamIcon{display: none;}
+@media screen and (max-width:800px){
+    nav ul li{display: block;} /* make a menu items vertical */
+    #hamIcon{display: block;} /* unhide menu icon */
+    nav ul{display: none;} /* hide the menu item list */
+}
+
+#menuList.menuShow{
+    display: block; 
+}
