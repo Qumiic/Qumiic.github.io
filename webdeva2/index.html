@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="some web app!!!">
     <link rel="stylesheet" href="style.css"> <!--this is to link css-->
     <link rel="icon" type="image/x-icon" href="images/icons8-video-card-48.ico"><!-- This is Favicon -->
+    <link rel="manifest" href="Icons/site.webmanifest">
     <title>PC Building</title>
 </head>
 <body>
@@ -52,7 +57,7 @@
             </div>
             <div class="container1">
             <img src="images/cpu.jpg" alt="cpu" class="page1-img">
-                <div id="page1-contentbox">         
+                <div class="page1-contentbox">         
                     <h4>CPU</h4>
                     <p>
                         Central Processing Unit.The primary component of a computer responsible for executing instructions and performing calculations. 
@@ -63,7 +68,7 @@
             </div>
             <div class="container1">
             <img src="images/ram-sticks-min.jpg" alt="ram" class="page1-img">
-                <div id="page1-contentbox">         
+                <div class="page1-contentbox">         
                     <h4>RAM</h4>
                     <p>
                         Random Access Memory. A temporary storage area that holds data and instructions that the CPU needs to access quickly. 
@@ -73,7 +78,7 @@
             </div>
             <div class="container1">
             <img src="images/ssd-storage-min.jpg" alt="ssd" class="page1-img">
-                <div id="page1-contentbox">         
+                <div class="page1-contentbox">         
                     <h4>Storage Devices</h4>
                     <p>
                         Computers have various types of storage devices for long-term data retention. 
@@ -84,7 +89,7 @@
             </div>
             <div class="container1">
             <img src="images/motherboards-min.jpg" alt="mb" class="page1-img">
-                <div id="page1-contentbox">         
+                <div class="page1-contentbox">         
                     <h4>Motherboard</h4>
                     <p>
                         The main circuit board of the computer, serving as a platform for connecting and 
@@ -94,7 +99,7 @@
             </div>
             <div class="container1">
             <img src="images/graphics-card-min.jpg" alt="gpu" class="page1-img">
-                <div id="page1-contentbox">         
+                <div class="page1-contentbox">         
                     <h4>GPU</h4>
                     <p>
                         Graphics Processing Unit. A specialized processor designed to handle graphics-related tasks. 
@@ -104,7 +109,7 @@
             </div>
             <div class="container1">
             <img src="images/power-supply-psu.jpg" alt="psu" class="page1-img">
-                <div id="page1-contentbox">         
+                <div class="page1-contentbox">         
                     <h4>PSU</h4>
                     <p>
                         Power Supply Unit. Converts AC power from the electrical outlet 
@@ -113,7 +118,7 @@
                 </div>
             </div>
             <div class="container1">
-                <div id="page1-contentbox2">         
+                <div class="page1-contentbox2">         
                     <h4>Peripherals</h4>
                     <p>
                         Such as Input/Output devices like Keyboard, Mouse, Touchpads which are inputs and
@@ -124,7 +129,7 @@
             </div>
         </div>
         <div class="page" id="page2">
-            <div id="title">
+            <div class="title">
                 <h2>Places to Buy Computer Parts</h2>
             </div>
             <div class="container2">
@@ -183,32 +188,32 @@
             </div>
         </div>
         <div class="page" id="page3">
-            <div id="title">
+            <div class="title">
                 <h2>How to build a PC</h2>
             </div>
             <div class="container3">
                 <img src="images/VergePc.jpg" alt="Verge" class="page3-img">
                 <div class="page3-contentbox">
                     <h4>Step By Step Guide</h4><br>
-                    <dl id="HowTo">
+                    <dl class="HowTo">
                         <dt>1. Prepare the Case</dt>
-                        <dd>- Place the case on a flat surface. Open the side panel(s) to access the interior.</dd><br>
+                        <dd>- Place the case on a flat surface. Open the side panel(s) to access the interior.</dd>
                         <dt>2. Install the Power Supply (PSU)</dt>
-                        <dd>- Mount the PSU in the designated PSU compartment. Route the power cables to the backside of the case for later connection.</dd><br>
+                        <dd>- Mount the PSU in the designated PSU compartment. Route the power cables to the backside of the case for later connection.</dd>
                         <dt>3. Install the CPU</dt>
-                        <dd>- Carefully open the CPU socket on the motherboard. Align the CPU with the socket's alignment marker and gently lower it in. Lock the CPU in place.</dd><br>
+                        <dd>- Carefully open the CPU socket on the motherboard. Align the CPU with the socket's alignment marker and gently lower it in. Lock the CPU in place.</dd>
                         <dt>4. Install the CPU Cooler</dt>
-                        <dd>- Apply a small amount of thermal paste to the CPU's center. Attach the CPU cooler according to the cooler's instructions.</dd><br>
+                        <dd>- Apply a small amount of thermal paste to the CPU's center. Attach the CPU cooler according to the cooler's instructions.</dd>
                         <dt>5. Install RAM</dt>
-                        <dd>- Open the RAM slots on the motherboard. Align the RAM sticks with the notches on the slots and firmly press them in until they click.</dd><br>
+                        <dd>- Open the RAM slots on the motherboard. Align the RAM sticks with the notches on the slots and firmly press them in until they click.</dd>
                         <dt>6. Install Storage Drives</dt>
-                        <dd>- Attach SSDs or HDDs in the designated drive bays using screws or trays provided.</dd><br>
+                        <dd>- Attach SSDs or HDDs in the designated drive bays using screws or trays provided.</dd>
                         <dt>7. Install the Motherboard</dt>
-                        <dd>- Carefully align the motherboard's I/O shield with the case's rear I/O cutout. Place the motherboard on the standoffs within the case. Secure the motherboard using screws provided.</dd><br>
+                        <dd>- Carefully align the motherboard's I/O shield with the case's rear I/O cutout. Place the motherboard on the standoffs within the case. Secure the motherboard using screws provided.</dd>
                         <dt>8. Connect Cables</dt>
-                        <dd>- Connect power cables from the PSU to the motherboard (ATX power, CPU power, etc.). Connect SATA cables from storage drives to the motherboard.</dd><br>
+                        <dd>- Connect power cables from the PSU to the motherboard (ATX power, CPU power, etc.). Connect SATA cables from storage drives to the motherboard.</dd>
                         <dt>9. Install the GPU</dt>
-                        <dd>- Remove the appropriate expansion slot covers. Align the GPU with the PCIe slot and firmly press it in until it clicks. Secure the GPU using screws or brackets.</dd><br>
+                        <dd>- Remove the appropriate expansion slot covers. Align the GPU with the PCIe slot and firmly press it in until it clicks. Secure the GPU using screws or brackets.</dd>
                         <dt>10. Cable Management</dt>
                         <dd>- Route cables neatly and use zip ties to secure them out of the way for better airflow.</dd>
                     </dl>
@@ -231,59 +236,58 @@
                 <div class="page3-contentbox2">
                     <h4>A Minigame to build a pc</h4>
                     <div id="left">
-                        <div class="list" draggable="true"><img src="images/cpu.jpg">CPU</div>
-                        <div class="list" draggable="true"><img src="images/graphics-card-min.jpg">GPU</div>
-                        <div class="list" draggable="true"><img src="images/motherboards-min.jpg">Motherboard</div>
-                        <div class="list" draggable="true"><img src="images/power-supply-psu.jpg">PSU</div>
+                        <div class="list" draggable="true"><img src="images/cpu.jpg" alt="cpu">CPU</div>
+                        <div class="list" draggable="true"><img src="images/graphics-card-min.jpg" alt="gpu">GPU</div>
+                        <div class="list" draggable="true"><img src="images/motherboards-min.jpg" alt="mb">Motherboard</div>
+                        <div class="list" draggable="true"><img src="images/power-supply-psu.jpg" alt="psu">PSU</div>
                     </div>
                     <div id="right"></div>
                 </div>
             </div>
         </div>
         <div class="page" id="page4">
-            <div id="title">
+            <div class="title">
                 <h2>My PC</h2>
             </div>
             <div class="container4">
                 <img src="images/MyPc.jpg" alt="mypc" class="page4-img">
                 <div class="page4-contentbox">
                     <h4>Specifications</h4>
-                    <p>Previously, I'd interned at Fuwell International for 3 months and bought my PC there(Year 2022). So I had some discount when purchasing it. (Prices may change)</p><br>                    
-                    <dl id="HowTo">
+                    <p>Previously, I'd interned at Fuwell International for 3 months and bought my PC there(Year 2022). So I had some discount when purchasing it. (Prices may change)</p>               
+                    <dl class="HowTo">
                         <dt>CPU</dt>
-                        <dd>- AMD Ryzen 5 5600X 3.7GHZ 35MB 6C/12T (Sgd$ 420)</dd><br>
+                        <dd>- AMD Ryzen 5 5600X 3.7GHZ 35MB 6C/12T (Sgd$ 420)</dd>
                         <dt>Motherboard</dt>
-                        <dd>- Asus ROG Strix B550-F Gaming Wifi ATX (Sgd$ 399)</dd><br>
+                        <dd>- Asus ROG Strix B550-F Gaming Wifi ATX (Sgd$ 399)</dd>
                         <dt>RAM</dt>
-                        <dd>- Kingston Fury Beast 3200Mhz RGB 32Gb CL16 DDR4 4x16gb (Sgd$ 120)</dd><br>
+                        <dd>- Kingston Fury Beast 3200Mhz RGB 32Gb CL16 DDR4 4x16gb (Sgd$ 120)</dd>
                         <dt>SSD</dt>
-                        <dd>- Samsung 970 Evo Plus 500Gb M.2 NvMe SSD (Sgd$ 105)</dd><br>
+                        <dd>- Samsung 970 Evo Plus 500Gb M.2 NvMe SSD (Sgd$ 105)</dd>
                         <dt>HDD</dt>
-                        <dd>- Seagate Barracuda Compute 3.5" 7200Rpm (Sgd$ 59)</dd><br>
+                        <dd>- Seagate Barracuda Compute 3.5" 7200Rpm (Sgd$ 59)</dd>
                         <dt>GPU</dt>
-                        <dd>- Asus RTX3070ti TUF Gaming OC 8Gb GDDR6X (Sgd$ 1075)</dd><br>
+                        <dd>- Asus RTX3070ti TUF Gaming OC 8Gb GDDR6X (Sgd$ 1075)</dd>
                         <dt>PSU</dt>
-                        <dd>- Corsair RM850 850W Fully Modular PSU 80+ Gold (Sgd$ 190)</dd><br>
+                        <dd>- Corsair RM850 850W Fully Modular PSU 80+ Gold (Sgd$ 190)</dd>
                         <dt>CASE</dt>
-                        <dd>- Corsair 4000D Airflow ATX Case Tempered Glass (Sgd$ 120)</dd><br>
+                        <dd>- Corsair 4000D Airflow ATX Case Tempered Glass (Sgd$ 120)</dd>
                         <dt>CPU Cooler</dt>
-                        <dd>- Corsair iCue H100i Elite Capellix AIO 240mm Liquid (Sgd$ 190)</dd><br>
+                        <dd>- Corsair iCue H100i Elite Capellix AIO 240mm Liquid (Sgd$ 190)</dd>
                         <dt>Total</dt>
-                        <dd>- Sgd$ 2,678</dd><br>
+                        <dd>- Sgd$ 2,678</dd>
                     </dl>                                      
                 </div>                
             </div>
             <div class="container4">                
                 <div class="page4-contentbox2">
                     <h4>Website's QR</h4> 
-                    <img src="images/MyPc.jpg" alt="QRcode" class="page4QR-img">                          
+                    <img src="images/Qr_code.jpg" alt="QRcode" class="page4QR-img">                          
                 </div>                              
             </div>
         </div>
     </div>
+    <footer>
+        <script src="script.js"></script>
+    </footer>
 </body>
-
-<footer>
-    <script src="script.js"></script>
-</footer>
 </html>

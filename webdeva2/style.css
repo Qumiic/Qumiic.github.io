@@ -130,7 +130,7 @@ p {
     font-size: 16px;
 }
 
-#title{
+.title{
     margin-bottom: 20px;
     background-color: #000000;
 }
@@ -140,7 +140,7 @@ p {
     
 }
 
-#page1-contentbox {
+.page1-contentbox {
     background-color: #4b004b;
     border: 3px solid #000000;
     width: 70%;
@@ -148,7 +148,7 @@ p {
     padding: 1%;
 }
 
-#page1-contentbox2 {
+.page1-contentbox2 {
     background-color: #4b004b;
     border: 3px solid #000000;
     width: 98%;
@@ -213,7 +213,7 @@ p {
     padding: 1%;
 }
 
-#HowTo{
+.HowTo{
     color: #ffffff;
     justify-content: center;
 }
@@ -362,7 +362,7 @@ p {
         left: 0;
     }
 
-    #title{
+    .title{
         margin-bottom: 20px;
         background-color: #000000;
     }
@@ -371,7 +371,7 @@ p {
         flex-direction: column;
     }
 
-    #page1-contentbox {
+    .page1-contentbox, .page1-contentbox2 {
         background-color: #4b004b;
         border: 3px solid #000000;
         width: 98%;
