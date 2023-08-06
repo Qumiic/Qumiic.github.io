@@ -4,99 +4,285 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> <!--this is to link css-->
-    <link rel="icon" type="image/x-icon" href="images/icons8-video-card-48.ico">
+    <link rel="icon" type="image/x-icon" href="images/icons8-video-card-48.ico"><!-- This is Favicon -->
     <title>PC Building</title>
 </head>
 <body>
     <header>
-        <h1>PC Building</h1>
+        <div class="container">
+            <div class="subcontainer">
+                <nav class="navbar">
+                    <a class="nav-branding">PC Building</a>
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a id="page1btn">PC Parts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="page2btn">Purchase</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="page3btn">Steps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="page4btn">My Specs</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
-    <nav> <!-- menu system -->
-        <button id="hamIcon">Menu</button>
-        <ul id="menuList">
-            <li><button id="page1btn">PC Parts</button></li>
-            <li><button id="page2btn">Where to buy</button></li>
-            <li><button id="page3btn">How to build</button></li>
-        </ul>
-    </nav>
+    
+    <section id="home">
+        <div class="container">
+            <div class="subcontainer">
+                <h3>Written by Kenneth aka Qumiic</h3>
+            </div>
+        </div>
+    </section>
+
     <div id="pagecontainer">
         <div class="page" id="page1">
-            <div id="title1">
+            <div id="title">
                 <h2>The Main Components of A Computer</h2>
             </div>
-            <img src="images/cpu.jpg" alt="cpu" class="cpu-img">
-            <div id="CPU">         
-                <h4>CPU</h4>
-                <p>
-                    Central Processing Unit.The primary component of a computer responsible for executing instructions and performing calculations. 
-                    It is often referred to as the <b>"brain"</b> of the computer. The CPU interprets and carries out instructions from computer programs, 
-                    handling tasks such as arithmetic operations, logic operations, and managing data movements within the computer's memory.
-                </p>
-            </div> 
-            <img src="images/ram-sticks-min.jpg" alt="ram" class="ram-img">
-            <div id="RAM">         
-                <h4>RAM</h4>
-                <p>
-                    Random Access Memory. A temporary storage area that holds data and instructions that the CPU needs to access quickly. 
-                    RAM allows the CPU to work with data rapidly, improving the computer's performance.
-                </p>
+            <div class="container1">
+            <img src="images/cpu.jpg" alt="cpu" class="page1-img">
+                <div id="page1-contentbox">         
+                    <h4>CPU</h4>
+                    <p>
+                        Central Processing Unit.The primary component of a computer responsible for executing instructions and performing calculations. 
+                        It is often referred to as the <b>"brain"</b> of the computer. The CPU interprets and carries out instructions from computer programs, 
+                        handling tasks such as arithmetic operations, logic operations, and managing data movements within the computer's memory.
+                    </p>
+                </div> 
             </div>
-            <img src="images/ssd-storage-min.jpg" alt="ssd" class="storage-img">
-            <div id="Storage">         
-                <h4>Storage Devices</h4>
-                <p>
-                    Computers have various types of storage devices for long-term data retention. 
-                    The most common ones are Hard Disk Drives (HDDs) and Solid State Drives (SSDs), 
-                    which store the operating system, software, files, and data.
-                </p>
+            <div class="container1">
+            <img src="images/ram-sticks-min.jpg" alt="ram" class="page1-img">
+                <div id="page1-contentbox">         
+                    <h4>RAM</h4>
+                    <p>
+                        Random Access Memory. A temporary storage area that holds data and instructions that the CPU needs to access quickly. 
+                        RAM allows the CPU to work with data rapidly, improving the computer's performance.
+                    </p>
+                </div>
             </div>
-            <img src="images/motherboards-min.jpg" alt="mb" class="mb-img">
-            <div id="MB">         
-                <h4>Motherboard</h4>
-                <p>
-                    The main circuit board of the computer, serving as a platform for connecting and 
-                    integrating all the essential components, such as the CPU, RAM, storage devices, and peripherals.
-                </p>
+            <div class="container1">
+            <img src="images/ssd-storage-min.jpg" alt="ssd" class="page1-img">
+                <div id="page1-contentbox">         
+                    <h4>Storage Devices</h4>
+                    <p>
+                        Computers have various types of storage devices for long-term data retention. 
+                        The most common ones are Hard Disk Drives (HDDs) and Solid State Drives (SSDs), 
+                        which store the operating system, software, files, and data.
+                    </p>
+                </div>
             </div>
-            <img src="images/graphics-card-min.jpg" alt="gpu" class="gpu-img">
-            <div id="GPU">         
-                <h4>GPU</h4>
-                <p>
-                    Graphics Processing Unit. A specialized processor designed to handle graphics-related tasks. 
-                    It is crucial for rendering images, videos, and running graphics-intensive applications and games.
-                </p>
+            <div class="container1">
+            <img src="images/motherboards-min.jpg" alt="mb" class="page1-img">
+                <div id="page1-contentbox">         
+                    <h4>Motherboard</h4>
+                    <p>
+                        The main circuit board of the computer, serving as a platform for connecting and 
+                        integrating all the essential components, such as the CPU, RAM, storage devices, and peripherals.
+                    </p>
+                </div>
             </div>
-            <img src="images/power-supply-psu.jpg" alt="psu" class="psu-img">
-            <div id="PSU">         
-                <h4>PSU</h4>
-                <p>
-                    Power Supply Unit. Converts AC power from the electrical outlet 
-                    into the DC power required by the computer's components.
-                </p>
+            <div class="container1">
+            <img src="images/graphics-card-min.jpg" alt="gpu" class="page1-img">
+                <div id="page1-contentbox">         
+                    <h4>GPU</h4>
+                    <p>
+                        Graphics Processing Unit. A specialized processor designed to handle graphics-related tasks. 
+                        It is crucial for rendering images, videos, and running graphics-intensive applications and games.
+                    </p>
+                </div>
             </div>
-            <div id="Additional">         
-                <h4>Peripherals</h4>
-                <p>
-                    Such as Input/Output devices like Keyboard, Mouse, Touchpads which are inputs and
-                    Monitors, Printers, Speakers which are outputs. Lastly, a <b>Cooling</b> system,
-                    typically composed of fans and heat sinks, ensures that the components remain at safe operating temperatures.
-                </p>
+            <div class="container1">
+            <img src="images/power-supply-psu.jpg" alt="psu" class="page1-img">
+                <div id="page1-contentbox">         
+                    <h4>PSU</h4>
+                    <p>
+                        Power Supply Unit. Converts AC power from the electrical outlet 
+                        into the DC power required by the computer's components.
+                    </p>
+                </div>
+            </div>
+            <div class="container1">
+                <div id="page1-contentbox2">         
+                    <h4>Peripherals</h4>
+                    <p>
+                        Such as Input/Output devices like Keyboard, Mouse, Touchpads which are inputs and
+                        Monitors, Printers, Speakers which are outputs. Lastly, a <b>Cooling</b> system,
+                        typically composed of fans and heat sinks, ensures that the components remain at safe operating temperatures.
+                    </p>
+                </div>
             </div>
         </div>
         <div class="page" id="page2">
-            <div id="title2">
+            <div id="title">
                 <h2>Places to Buy Computer Parts</h2>
             </div>
-            <h4>Sim Lim Square</h4>
+            <div class="container2">
+                <img src="images/SimLimSquare.jpg" alt="SimLim" class="page2-img">
+                <div class="page2-contentbox">
+                    <h4>Sim Lim Square</h4>
+                    <p>One of the most well-known locations for electronics and computer parts in Singapore. 
+                        It's a large shopping mall with numerous stores offering a wide variety of computer components, peripherals, and accessories.
+                        Here's a short guide video on shopping in Sim Lim Square. <a href="https://youtu.be/pi9vks-1t6A" target="_blank">https://youtu.be/pi9vks-1t6A</a>
+                    </p>
+                    <br>
+                    <h4><b>Tips</b> before and while shopping at Sim Lim Square</h4>
+                    <p>Before buying any PC, you should have some specific computer parts in mind like a <b>GPU - RTX4090</b> or an <b>Intel</b> CPU, and a <strong>BUDGET</strong>.
+                        You can also go here to help you pick out some parts and make an estimated budget.<a href="https://sg.pcpartpicker.com/list/" target="_blank">https://sg.pcpartpicker.com/list/</a></p><br>
+                    <p>After having a PC build saved. You are ready to go shopping or scouting at Sim Lim Square. Visit as many stores you'd like and kindly asked a working staff to help you make a <b>Quotation</b> for your PC built.</p><br>
+                    <p>Then decide which store you'd like to purchase from, depending on the price or the specific parts available at that store. It's up to you.</p><br>
+                    <h4>Here's some stores i would reccomend. Most stores are located level 4 and above.<br> 
+                        <b>Tip:</b> The stores in the inner square can be trusted and can be quite expensive while the outer square is sketchy and parts are cheapier.</h4>
+                    <ol id="Stores" type="1">
+                        <li>Fuwell (Level 4)</li>
+                        <li>PCThemes (Level 4)</li>
+                        <li>Infinity Computer (Level 4)</li>
+                        <li>Dynacore (Level 5)</li>
+                        <li>ViiPc (Level 5)</li>
+                        <li>TradePac (Level 5)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="container2">
+                <img src="images/onlineshopping.jpg" alt="shopping" class="page2-img">
+                <div class="page2-contentbox">
+                    <h4>Online Platforms</h4>
+                    <p><b>Lazada and Shopee:</b> 
+                        <br>These popular online marketplaces in Singapore also have a significant presence of computer parts sellers, 
+                        allowing you to browse and purchase items from the comfort of your home.
+                    </p>
+                </div>
+            </div>
+            <div class="container2">
+                <img src="images/aftershock.jpg" alt="aftershock" class="page2-img">
+                <div class="page2-contentbox">
+                    <h4>Pre-Build</h4>
+                    <p> 
+                        <b>You may be looked down upon if you get Pre-built.</b><br>
+                        Although it is not really as bad as people say. It can still be a custom-build but paying extra for a professional to build it. Just the lazier and safer option. 
+                        Sim Lim Square stores also does Pre-Built PCs.
+                    </p>
+                    <br>
+                    <h4>Here are the links to purchase them</h4>
+                    <ul>
+                        <li><a href="https://www.aftershockpc.com" target="_blank">https://www.aftershockpc.com</a></li>
+                        <li><a href="https://www.mansacomputers.com" target="_blank">https://www.mansacomputers.com</a></li>
+                        <li><a href="https://www.monsterpc-sg.com" target="_blank">https://www.monsterpc-sg.com</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="page" id="page3">
-            <div id="title3">
-                <h2>Steps to building a PC</h2>
+            <div id="title">
+                <h2>How to build a PC</h2>
             </div>
-            <h4>A Minigame to build a pc</h4>
+            <div class="container3">
+                <img src="images/VergePc.jpg" alt="Verge" class="page3-img">
+                <div class="page3-contentbox">
+                    <h4>Step By Step Guide</h4><br>
+                    <dl id="HowTo">
+                        <dt>1. Prepare the Case</dt>
+                        <dd>- Place the case on a flat surface. Open the side panel(s) to access the interior.</dd><br>
+                        <dt>2. Install the Power Supply (PSU)</dt>
+                        <dd>- Mount the PSU in the designated PSU compartment. Route the power cables to the backside of the case for later connection.</dd><br>
+                        <dt>3. Install the CPU</dt>
+                        <dd>- Carefully open the CPU socket on the motherboard. Align the CPU with the socket's alignment marker and gently lower it in. Lock the CPU in place.</dd><br>
+                        <dt>4. Install the CPU Cooler</dt>
+                        <dd>- Apply a small amount of thermal paste to the CPU's center. Attach the CPU cooler according to the cooler's instructions.</dd><br>
+                        <dt>5. Install RAM</dt>
+                        <dd>- Open the RAM slots on the motherboard. Align the RAM sticks with the notches on the slots and firmly press them in until they click.</dd><br>
+                        <dt>6. Install Storage Drives</dt>
+                        <dd>- Attach SSDs or HDDs in the designated drive bays using screws or trays provided.</dd><br>
+                        <dt>7. Install the Motherboard</dt>
+                        <dd>- Carefully align the motherboard's I/O shield with the case's rear I/O cutout. Place the motherboard on the standoffs within the case. Secure the motherboard using screws provided.</dd><br>
+                        <dt>8. Connect Cables</dt>
+                        <dd>- Connect power cables from the PSU to the motherboard (ATX power, CPU power, etc.). Connect SATA cables from storage drives to the motherboard.</dd><br>
+                        <dt>9. Install the GPU</dt>
+                        <dd>- Remove the appropriate expansion slot covers. Align the GPU with the PCIe slot and firmly press it in until it clicks. Secure the GPU using screws or brackets.</dd><br>
+                        <dt>10. Cable Management</dt>
+                        <dd>- Route cables neatly and use zip ties to secure them out of the way for better airflow.</dd>
+                    </dl>
+                    <br><p>Lastly, do a final check to ensure all connections and components are securey seated. Then connect the monitor, keyboard and mouse. And it's ready to boot up.</p>
+                </div>
+                
+            </div>
+            <div class="container3">
+                <div class="page3-contentbox2">
+                    <h4> Here's a video guide on to building a PC</h4>
+                    <div class="embed-responsive">
+                        <iframe src="https://www.youtube.com/embed/BL4DCEp7blY" title="Guide to build a pc" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container3">
+                <div class="page3-contentbox2">
+                    <h4>A Minigame to build a pc</h4>
+                    <div id="left">
+                        <div class="list" draggable="true"><img src="images/cpu.jpg">CPU</div>
+                        <div class="list" draggable="true"><img src="images/graphics-card-min.jpg">GPU</div>
+                        <div class="list" draggable="true"><img src="images/motherboards-min.jpg">Motherboard</div>
+                        <div class="list" draggable="true"><img src="images/power-supply-psu.jpg">PSU</div>
+                    </div>
+                    <div id="right"></div>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page4">
+            <div id="title">
+                <h2>My PC</h2>
+            </div>
+            <div class="container4">
+                <img src="images/MyPc.jpg" alt="mypc" class="page4-img">
+                <div class="page4-contentbox">
+                    <h4>Specifications</h4>
+                    <p>Previously, I'd interned at Fuwell International for 3 months and bought my PC there(Year 2022). So I had some discount when purchasing it. (Prices may change)</p><br>                    
+                    <dl id="HowTo">
+                        <dt>CPU</dt>
+                        <dd>- AMD Ryzen 5 5600X 3.7GHZ 35MB 6C/12T (Sgd$ 420)</dd><br>
+                        <dt>Motherboard</dt>
+                        <dd>- Asus ROG Strix B550-F Gaming Wifi ATX (Sgd$ 399)</dd><br>
+                        <dt>RAM</dt>
+                        <dd>- Kingston Fury Beast 3200Mhz RGB 32Gb CL16 DDR4 4x16gb (Sgd$ 120)</dd><br>
+                        <dt>SSD</dt>
+                        <dd>- Samsung 970 Evo Plus 500Gb M.2 NvMe SSD (Sgd$ 105)</dd><br>
+                        <dt>HDD</dt>
+                        <dd>- Seagate Barracuda Compute 3.5" 7200Rpm (Sgd$ 59)</dd><br>
+                        <dt>GPU</dt>
+                        <dd>- Asus RTX3070ti TUF Gaming OC 8Gb GDDR6X (Sgd$ 1075)</dd><br>
+                        <dt>PSU</dt>
+                        <dd>- Corsair RM850 850W Fully Modular PSU 80+ Gold (Sgd$ 190)</dd><br>
+                        <dt>CASE</dt>
+                        <dd>- Corsair 4000D Airflow ATX Case Tempered Glass (Sgd$ 120)</dd><br>
+                        <dt>CPU Cooler</dt>
+                        <dd>- Corsair iCue H100i Elite Capellix AIO 240mm Liquid (Sgd$ 190)</dd><br>
+                        <dt>Total</dt>
+                        <dd>- Sgd$ 2,678</dd><br>
+                    </dl>                                      
+                </div>                
+            </div>
+            <div class="container4">                
+                <div class="page4-contentbox2">
+                    <h4>Website's QR</h4> 
+                    <img src="images/MyPc.jpg" alt="QRcode" class="page4QR-img">                          
+                </div>                              
+            </div>
         </div>
     </div>
 </body>
+
 <footer>
     <script src="script.js"></script>
 </footer>

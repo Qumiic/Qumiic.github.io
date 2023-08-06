@@ -1,126 +1,488 @@
-nav ul li{display: inline;}
-.page{
-    width: 95vw;
-    height: 100%;
-    border: 1px solid black;
-    padding-left: 1%;
-    padding-right: 1%;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
     font-family: 'Century Gothic', sans-serif;
 }
-#page1{background-color: rgba(55, 6, 80, 0.5);}
-#page2{background-color: rgb(0, 255, 0);}
-#page3{background-color: rgb(0, 0, 255);} 
-h1{color: rgb(255, 255, 255);font-family: 'Century Gothic', sans-serif;}
-h2{color: white; text-align: center;letter-spacing: 2px;}
-h4{color: white;text-align: center; font-size: 18px;}
-p{color: white;text-align: justify;font-size: 16px;}
 
-body{
-    margin: 0.5%;
-    padding: 1%;
+body {
+    position: relative;
+    height: 100%;
     background: url('images/desktop-bg.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-/* for responsive menu */
-#hamIcon{display: none;}
-@media screen and (max-width:800px){
-    body{
-        margin: 0.5%;
-        padding: 1%;
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #0b2239;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container {
+    width: 1600px;
+    margin: auto;
+}
+
+.subcontainer {
+    width: 90%;
+    margin: auto;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+}
+
+#home {
+    margin-top: 70px;
+    color: #ffffff;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+#page1 {
+    background-color: #37065080;
+    padding: 5px;
+}
+
+#page2 {
+    background-color: #bd550580;
+    padding: 5px;
+}
+
+#page3 {
+    background-color: #1a4b1180;
+    padding: 5px;
+}
+
+#page4 {
+    background-color: #12208d80;
+    padding: 5px;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+h4 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+}
+
+p {
+    color: #ffffff;
+    text-align: justify;
+    font-size: 16px;
+}
+
+#title{
+    margin-bottom: 20px;
+    background-color: #000000;
+}
+
+.container1{
+    display: flex;
+    
+}
+
+#page1-contentbox {
+    background-color: #4b004b;
+    border: 3px solid #000000;
+    width: 70%;
+    margin: 1%;
+    padding: 1%;
+}
+
+#page1-contentbox2 {
+    background-color: #4b004b;
+    border: 3px solid #000000;
+    width: 98%;
+    margin: 1%;
+    padding: 1%;
+}
+
+.page1-img {
+    margin-bottom: 10px;
+    width: 30%;
+    border: 2px solid #ffffff;
+}
+
+.container2{
+    display: flex;
+    
+}
+
+.page2-img{
+    margin-bottom: 10px;
+    width: 45%;
+    border: 2px solid #ffffff;
+}
+
+.page2-contentbox{
+    background-color: #bd5505;
+    border: 3px solid #000000;
+    width: 70%;
+    margin: 1%;
+    padding: 1%;
+}
+
+#Stores{
+    justify-content: center;
+    color: #ffffff;
+}
+
+.container3{
+    display: flex;
+    
+}
+
+.page3-img{
+    margin-bottom: 10px;
+    width: 30%;
+    border: 2px solid #ffffff;
+}
+
+.page3-contentbox{
+    background-color: #1a4b11;
+    border: 3px solid #000000;
+    width: 70%;
+    margin: 1%;
+    padding: 1%;
+}
+
+.page3-contentbox2{
+    background-color: #1a4b11;
+    border: 3px solid #000000;
+    width: 98%;
+    margin: 1%;
+    padding: 1%;
+}
+
+#HowTo{
+    color: #ffffff;
+    justify-content: center;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive::before {
+    padding-top: 56.25%;
+    display: block;
+    content: "";
+    box-sizing: border-box;
+}
+
+.embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#left, #right{
+    width: 300px;
+    min-height: 400px;
+    margin: 20px;
+    border: 2px dashed #ffffff;
+}
+
+.list{
+    background: #1a4b11;
+    height: 60px;
+    margin: 30px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    cursor: grab;
+}
+
+.list img{
+    width: 35%;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+.container4{
+    display: flex;
+}
+
+.page4-img{
+    margin-bottom: 10px;
+    width: 45%;
+    border: 2px solid #ffffff;
+}
+
+.page4-contentbox{
+    background-color: #12208d;
+    border: 3px solid #000000;
+    width: 55%;
+    margin: 1%;
+    padding: 1%;
+}
+
+.page4-contentbox2{
+    
+    background-color: #12208d;
+    border: 3px solid #000000;
+    width: 98%;
+    margin: 1%;
+    padding: 1%;
+}
+
+.page4QR-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border: 2px solid #000000;
+}
+
+@media screen and (max-width:800px) {
+    body {
+        position: relative;
+        height: 1000vh;
         background: url('images/phone-bg.jpg') no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }
+
+    h4 {
+        color: #ffffff;
+        text-align: center;
+        font-size: 18px;
+    }
     
-    nav ul li{display: block;} /* make a menu items vertical */
-    #hamIcon{display: block;} /* unhide menu icon */
-    nav ul{display: none;} /* hide the menu item list */
+    p {
+        color: #ffffff;
+        text-align: justify;
+        font-size: 16px;
+    }
 
-    #CPU{
-        border: 3px solid rgb(0, 0, 0);
+    .container{
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #0b2239;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    #title{
+        margin-bottom: 20px;
+        background-color: #000000;
+    }
+
+    .container1{
+        flex-direction: column;
+    }
+
+    #page1-contentbox {
+        background-color: #4b004b;
+        border: 3px solid #000000;
+        width: 98%;
         margin: 1%;
         padding: 1%;
     }
-    .cpu-img{
+
+    .page1-img {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+        border: 2px solid #ffffff;
     }
-    #RAM{
-        border: 3px solid rgb(0, 0, 0);
-        margin: 1%;
-        padding: 1%;
+
+    .container2{
+        flex-direction: column;
     }
-    .ram-img{
+
+    .page2-img{
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+        border: 2px solid #ffffff;
     }
-    #Storage{
-        border: 3px solid rgb(0, 0, 0);
+
+    .page2-contentbox{
+        background-color: #bd5505;
+        border: 3px solid #000000;
+        width: 98%;
         margin: 1%;
         padding: 1%;
     }
-    .storage-img{
+
+    #Stores{
+        justify-content: center;
+        color: #ffffff;
+    }
+
+    .container3{
+        flex-direction: column;
+    }
+
+    .page3-img{
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+        border: 2px solid #ffffff;
     }
-    #MB{
-        border: 3px solid rgb(0, 0, 0);
+
+    .page3-contentbox{
+        background-color: #1a4b11;
+        border: 3px solid #000000;
+        width: 98%;
         margin: 1%;
         padding: 1%;
     }
-    .mb-img{
+
+    #HowTo{
+        color: #ffffff;
+        justify-content: center;
+    }
+
+    #left, #right{
+        width: 300px;
+        min-height: 400px;
+        margin: 20px;
+        border: 2px dashed #ffffff;
+    }
+
+    .list{
+        background: #1a4b11;
+        height: 60px;
+        margin: 30px;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        cursor: grab;
+    }
+
+    .list img{
+        width: 35%;
+        margin-right: 15px;
+        margin-left: 20px;
+    }
+
+    .container4{
+        flex-direction: column;
+    }
+    
+    .page4-img{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 75%;
+        border: 2px solid #ffffff;
     }
-    #GPU{
-        border: 3px solid rgb(0, 0, 0);
+    
+    .page4-contentbox{
+        background-color: #12208d;
+        border: 3px solid #000000;
+        width: 98%;
         margin: 1%;
         padding: 1%;
     }
-    .gpu-img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-    #PSU{
-        border: 3px solid rgb(0, 0, 0);
-        margin: 1%;
-        padding: 1%;
-    }
-    .psu-img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-    #Additional{
-        border: 3px solid rgb(0, 0, 0);
-        margin: 1%;
-        padding: 1%;
+
+    .page4-contentbox2{
+        display: none;
     }
 }
 
-#menuList.menuShow{
-    display: block; 
-}
 
-#CPU{
-    display: block;
-    flex-wrap: wrap;
-    border: 3px solid rgb(0, 0, 0);
-    padding: 1%
-}
-.cpu-img{
-    max-width: 50%;
-}

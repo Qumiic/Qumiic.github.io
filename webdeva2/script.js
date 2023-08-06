@@ -4,6 +4,12 @@
 const page1btn = document.querySelector("#page1btn");
 const page2btn = document.querySelector("#page2btn");
 const page3btn = document.querySelector("#page3btn");
+const page4btn = document.querySelector("#page4btn");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const lists = document.querySelector(".list");
+const rightbox = document.querySelector("#right");
+const leftbox = document.querySelector("#left");
 var allpages = document.querySelectorAll(".page");
 // select all subtopic pages
 
@@ -34,12 +40,50 @@ page2btn.addEventListener("click", function () {
 page3btn.addEventListener("click", function () {
     show(3);
 });
+page4btn.addEventListener("click", function () {
+    show(4);
+});
 
-/*for hamMenu */
-const hamBtn = document.querySelector("#hamIcon");
-hamBtn.addEventListener("click", toggleMenus);
-const menuItemsList = document.querySelector("nav ul");
-function toggleMenus() { /*open and close menu*/
-    menuItemsList.classList.toggle("menuShow");
-}//can optimize using toggle class with css transitions
+// NavBar
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-link").forEach
+    (n => n.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }));
+
+
+// Drag and Drop
+for (list of lists){
+    list.addEventListener("dragstart", function(e){
+        let selected = e.target;
+
+        rightbox.addEventListener("dragover", function(e){
+            e.preventDefault();
+        });
+        rightbox.addEventListener("drop", function(e){
+            rightbox.appendChild(selected);
+            selected = null;
+        });
+
+        leftbox.addEventListener("dragover", function(e){
+            e.preventDefault();
+        });
+        leftbox.addEventListener("drop", function(e){
+            leftbox.appendChild(selected);
+            selected = null;
+        });
+    })
+}
+
+
+
+
+
+
+
 
